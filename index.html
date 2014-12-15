@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>EdinburghJS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       html {
         background: #0065BD;
@@ -10,16 +11,30 @@
         text-align: center;
       }
       body {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
         align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         height: 100%;
         margin: 0;
       }
       a {
         color: #fff !important; /* bite me */
+        font-size: 3vw;
+        font-weight: bold;
         margin: 0 auto;
         text-align: left;
         text-decoration: none;
+      }
+      @media (min-width: 500px) {
+        a {
+          font-size: 1em;
+          font-weight: normal;
+        }
       }
     </style>
   </head>
